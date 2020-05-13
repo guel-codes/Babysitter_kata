@@ -14,3 +14,4 @@ def check_good_end(end_time):
     if end_time not in range(12, 24 + 1):
         end_time += 24
     return end_time   
+
