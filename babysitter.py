@@ -1,4 +1,4 @@
-def hours_worked(start_time,end_time):
+def calc_hours_worked(start_time,end_time):
     start_time = _check_good_start(start_time)
     end_time = _check_good_end(end_time)
     _is_shift_exception(start_time,end_time)
