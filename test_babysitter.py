@@ -18,7 +18,6 @@ def test_end_time():
     assert calc_hours_worked(start_time,end_time) == 1
     
 
-
 def test_exception_if_end_time_is_before_start_time():
     with pytest.raises(Exception) as err:
         start_time = 18
@@ -27,6 +26,8 @@ def test_exception_if_end_time_is_before_start_time():
     err.match("Shift end time is before the start time")
 
 def test_start_time_before_midnight_end_time_after_midnight():
-    start_time = 23
+    start_time = 22
     end_time = 1
-    assert calc_hours_worked(start_time,end_time) == 2
+    assert calc_hours_worked(start_time,end_time) == 3
+
+

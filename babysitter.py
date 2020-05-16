@@ -21,3 +21,10 @@ def _check_good_end(end_time):
         end_time += 24
     return end_time   
 
+"""
+Next steps:
+Tests for family pay rates
+
+Dictionary
+Class
+"""
