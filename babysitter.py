@@ -6,7 +6,7 @@ def hours_worked(start_time,end_time):
     
 
 def _check_good_start(start_time):
-    if start_time < 17:
+    if start_time < 17 and start_time in range(12,24 +1):
         start_time = 17
     return start_time
     
