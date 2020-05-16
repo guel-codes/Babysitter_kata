@@ -1,7 +1,12 @@
 def hours_worked(start_time,end_time):
+    if end_time in range(0,4 + 1):
+        end_time += 24
+        
+    if start_time > end_time:
+        raise Exception("Shift end time is before the start time")
+
     start_time = _check_good_start(start_time)
     end_time = _check_good_end(end_time)
-
     return end_time - start_time
     
 
@@ -13,5 +18,6 @@ def _check_good_start(start_time):
 def _check_good_end(end_time):
     if end_time not in range(12, 24 + 1):
         end_time += 24
+   
     return end_time   
 
