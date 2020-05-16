@@ -12,6 +12,8 @@ def test_start_time():
     assert hours_worked(start_time,end_time) == 1
 
 def test_end_time():
-    assert hours_worked(23,0) == 1
+    start_time = 23 
+    end_time = 0
+    assert hours_worked(start_time,end_time) == 1
 
  
